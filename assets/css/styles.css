@@ -1,0 +1,305 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base Styles */
+body, h2, h3, h4, h5 {
+    font-family: 'Abel', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1 {
+    font-family: 'Abel', sans-serif;
+    font-weight: bold;
+}
+
+/* Header */
+header {
+    background-color: #444;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Navigation */
+nav {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.navbar a {
+    color: #444;
+    background-color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Parallax Background */
+.parallax-section {
+    background: url('../images/background for parallax.jpg') no-repeat fixed center;
+    background-size: cover;
+    padding: 130px 0;
+    color: #fff;
+    text-align: center;
+}
+
+/* Layout Containers */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Horizontal Scrolling Menu */
+.dishes-menu {
+    display: flex;
+    overflow-x: auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+.dish-item {
+    flex: 0 0 auto;
+    width: 200px;
+}
+
+.dish-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* About Section */
+.about-section {
+    padding: 40px 0;
+    background-color: #e9e9e9;
+}
+
+/* Social Media Links */
+.social-links a {
+    margin: 0 10px;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+.bg-light {
+    background-color: #f4f4f4;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+    
+    .navbar {
+        flex-direction: column;
+    }
+}
+
+/* Additional Styles */
+.navbar-brand img {
+    height: 100px;
+    width: auto;
+    opacity: 0.9;
+}
+
+.main-header-name {
+    font-size: 4.5em;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    display: inline-block; 
+    margin-top: 20px;
+}
+
+.dish {
+    width: 33.333%;
+    float: left;
+    padding: 15px;
+    position: relative; 
+    text-align: center;
+}
+
+.dish h5 {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    left: 0;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.dish img {
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.dish-image {
+    height: 100px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.carousel-item {
+    display: flex;
+}
+
+.about-section {
+    background-color: #F3F5EB;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 14px 8px rgba(0,0,0,0.1);
+}
+
+.about-section h2, .about-section p {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    background-color: #F3F5EB;
+    color: #333;
+}
+
+.about-logo {
+    height: 17em;
+}
+
+.main-header-name span {
+    color: #fff;
+    transition: transform 0.5s, color 0.5s;
+}
+
+.contact-section {
+    background-color: #F3F5EB;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 8px rgba(0,0,0,0.1);
+    font-size: 2.2rem;
+}
+
+.contact-link, .social-icon, a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #28a745;
+}
+
+.fab {
+    font-size: 2rem;
+}
+
+.video-container {
+    position: relative; 
+    height: 50vh;
+    overflow: hidden; 
+}
+
+.background-clip {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1; 
+}
+
+.video_overlay_text {
+    font-size: 2em;
+    margin-bottom: 20px;
+    background: transparent;
+}
+
+.order-now-btn {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 15px 30px;
+    font-size: 2.8rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    border-radius: 25px;
+    display: inline-block;
+    min-width: 150px;
+}
+
+@media (max-width: 768px) {
+    .video-container {
+        height: 30vh;
+    }
+    .order-now-btn {
+        font-size: 1.4rem;
+        padding: 10px 20px;
+    }
+}
+
+.employee-image {
+    border: 12px solid #333;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.img-wrapper {
+    height: 200px;
+    overflow: hidden;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-body, card-title, card-text {
+    background-color: white;
+}
+
+.cart-icon {
+    position: relative;
+    font-size: 24px; 
+    color: red; 
+}
+
+.cart-badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    line-height: 1;
+}
